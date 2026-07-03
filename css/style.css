@@ -1,7 +1,49 @@
-/* AKTSmart Technologies Website */
-
-body{
+*{
     margin:0;
     padding:0;
-    font-family:Arial, sans-serif;
+    box-sizing:border-box;
+}
+
+body{
+    font-family:'Poppins',sans-serif;
+}
+
+.hero{
+
+    height:100vh;
+
+    background:linear-gradient(rgba(8,15,32,.70),
+    rgba(8,15,32,.70)),
+    url('https://images.unsplash.com/photo-1497366754035-f200968a6e72?q=80&w=2000');
+
+    background-size:cover;
+
+    background-position:center;
+
+    display:flex;
+
+    justify-content:center;
+
+    align-items:center;
+
+    text-align:center;
+
+    color:white;
+
+}
+
+.hero h1{
+
+    font-size:64px;
+
+    font-weight:700;
+
+}
+
+.hero p{
+
+    font-size:22px;
+
+    margin-top:20px;
+
 }
