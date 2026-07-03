@@ -1,1 +1,1 @@
-console.log("AKTSmart Website Loaded");
+console.log("AKTSmart Technologies Website Loaded");
