@@ -12,7 +12,33 @@ body{
     max-width:900px;
     margin:auto;
 }
+.hero p{
 
+    font-size:24px;
+
+    margin-bottom:35px;
+
+    color:#E8E8E8;
+}
+.hero-buttons .btn{
+
+    padding:15px 35px;
+
+    margin:10px;
+
+    font-size:18px;
+
+    border-radius:50px;
+
+    transition:.4s;
+}
+
+.hero-buttons .btn:hover{
+
+    transform:translateY(-5px);
+
+    box-shadow:0 15px 35px rgba(0,0,0,.35);
+}
 .hero-tag{
     display:inline-block;
     padding:10px 25px;
@@ -23,4 +49,41 @@ body{
     font-weight:600;
     letter-spacing:1px;
     margin-bottom:25px;
+}
+.scroll-down{
+
+    margin-top:60px;
+
+    font-size:32px;
+
+    animation:bounce 2s infinite;
+
+    color:white;
+}
+
+@keyframes bounce{
+
+0%,20%,50%,80%,100%{
+
+transform:translateY(0);
+
+}
+
+40%{
+
+transform:translateY(-12px);
+
+}
+
+60%{
+
+transform:translateY(-6px);
+
+}
+
+}
+html{
+
+scroll-behavior:smooth;
+
 }
