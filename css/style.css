@@ -64,6 +64,11 @@ body{
     font-size:54px;
     line-height:1.15;
 }
+.hero h2{
+    font-size:40px;
+    font-weight:700;
+    line-height:1.2;
+}
 .hero p{
     font-size:22px;
     line-height:1.6;
