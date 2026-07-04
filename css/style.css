@@ -99,3 +99,127 @@ transform:translateY(-6px);
 }
 
 }
+/* ============================= */
+/* Responsive Design             */
+/* ============================= */
+
+@media (max-width: 992px){
+
+.hero{
+    height:auto;
+    min-height:100vh;
+    padding:120px 0 80px;
+}
+
+.hero-content{
+
+    width:90%;
+    margin:auto;
+    text-align:center;
+
+}
+
+.hero h1{
+
+    font-size:52px;
+
+}
+
+.hero p{
+
+    font-size:22px;
+
+}
+
+.hero-buttons .btn{
+
+    display:block;
+    width:280px;
+    margin:15px auto;
+
+}
+
+}
+
+@media (max-width:768px){
+
+.hero{
+
+    background-position:left center;
+
+}
+
+.hero-tag{
+
+    font-size:14px;
+
+}
+
+.hero h1{
+
+    font-size:42px;
+
+}
+
+.hero p{
+
+    font-size:18px;
+
+}
+
+.hero-buttons .btn{
+
+    width:100%;
+
+}
+
+}
+
+@media (max-width:576px){
+
+.hero{
+
+    padding-top:90px;
+
+}
+
+.hero h1{
+
+    font-size:34px;
+    line-height:1.2;
+
+}
+
+.hero p{
+
+    font-size:16px;
+
+}
+
+.hero-tag{
+
+    font-size:12px;
+    padding:8px 16px;
+
+}
+
+.hero-buttons{
+
+    margin-top:25px;
+
+}
+
+.hero-buttons .btn{
+
+    width:100%;
+    font-size:17px;
+
+}
+
+.scroll-down{
+
+    display:none;
+
+}
+
+}
