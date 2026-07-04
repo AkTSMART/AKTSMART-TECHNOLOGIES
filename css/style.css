@@ -1,11 +1,7 @@
-/* ==========================================================
-   AKTSmart Technologies
-   Main Stylesheet
-   ========================================================== */
-
-/* --------------------------
-   Reset
--------------------------- */
+/* ==========================================
+   AKTSMART TECHNOLOGIES
+   MAIN STYLESHEET
+========================================== */
 
 *{
     margin:0;
@@ -20,363 +16,202 @@ html{
 body{
 
     font-family:'Poppins',sans-serif;
-
     background:#ffffff;
-
-    color:#1d1d1d;
-
+    color:#222;
     overflow-x:hidden;
 
 }
 
-/* --------------------------
-   Links
--------------------------- */
-
-a{
-
-    text-decoration:none;
-
-    transition:.3s;
-
-}
-
-img{
-
-    max-width:100%;
-
-    display:block;
-
-}
-
-/* --------------------------
-   Navbar
--------------------------- */
+/*==========================================
+            NAVBAR
+==========================================*/
 
 .navbar{
 
-    background:rgba(8,17,32,.92);
-
-    backdrop-filter:blur(12px);
-
+    background:#141b28;
     padding:18px 0;
-
     transition:.35s;
 
 }
 
 .navbar-brand{
 
-    font-size:28px;
-
+    font-size:2rem;
     font-weight:700;
-
-    color:#ffffff !important;
+    color:#fff !important;
 
 }
 
-.navbar-nav .nav-link{
+.nav-link{
 
-    color:#ffffff !important;
-
-    margin-left:18px;
-
+    color:#fff !important;
+    font-size:17px;
     font-weight:500;
-
-    font-size:16px;
-
-}
-
-.navbar-nav .nav-link:hover{
-
-    color:#3fb8ff !important;
+    margin-left:15px;
+    transition:.3s;
 
 }
 
-/* Dropdown */
+.nav-link:hover{
+
+    color:#48b6ff !important;
+
+}
 
 .dropdown-menu{
 
     border:none;
-
     border-radius:12px;
-
-    padding:12px 0;
-
-    box-shadow:0 15px 40px rgba(0,0,0,.18);
+    box-shadow:0 10px 35px rgba(0,0,0,.18);
 
 }
 
 .dropdown-item{
 
-    padding:12px 22px;
-
-    font-size:15px;
+    padding:12px 20px;
+    transition:.25s;
 
 }
 
 .dropdown-item:hover{
 
-    background:#3fb8ff;
-
-    color:white;
+    background:#0d6efd;
+    color:#fff;
 
 }
 
-/* --------------------------
-   Hero
--------------------------- */
+/*==========================================
+            HERO
+==========================================*/
 
 .hero{
 
-    padding-top:90px;
+    min-height:100vh;
 
-    background:#071321;
+    background:url("../images/herov3.png") no-repeat center center;
 
-}
+    background-size:cover;
 
-.hero-image{
+    position:relative;
 
-    width:100%;
+    display:flex;
 
-    display:block;
-
-}
-
-/* --------------------------
-   Section Heading
--------------------------- */
-
-.section-heading{
-
-    text-align:center;
-
-    margin-bottom:70px;
+    align-items:center;
 
 }
 
-.section-heading h5{
+.hero::before{
 
-    color:#3fb8ff;
+    content:"";
+
+    position:absolute;
+
+    inset:0;
+
+    background:rgba(6,12,26,.45);
+
+}
+
+.hero .container{
+
+    position:relative;
+
+    z-index:2;
+
+}
+
+.hero-content{
+
+    max-width:650px;
+
+    color:#fff;
+
+}
+
+.hero-tag{
+
+    display:inline-block;
+
+    padding:8px 18px;
+
+    background:rgba(0,0,0,.45);
+
+    color:#56c7ff;
+
+    border-radius:30px;
 
     font-size:15px;
 
-    letter-spacing:3px;
+    margin-bottom:20px;
 
-    text-transform:uppercase;
-
-    font-weight:600;
+    letter-spacing:1px;
 
 }
 
-.section-heading h2{
+.hero h1{
 
-    font-size:48px;
+    font-size:64px;
 
     font-weight:700;
 
-    margin:15px 0;
-
-    color:#111;
-
-}
-
-.section-heading p{
-
-    max-width:760px;
-
-    margin:auto;
-
-    color:#666;
-
-    font-size:18px;
-
-    line-height:1.8;
-
-}
-
-/* --------------------------
-   Expertise
--------------------------- */
-
-.expertise{
-
-    padding:100px 0;
-
-    background:#f7f9fc;
-
-}
-
-.expert-card{
-
-    background:#ffffff;
-
-    border-radius:20px;
-
-    padding:45px 35px;
-
-    text-align:center;
-
-    height:100%;
-
-    transition:.35s;
-
-    box-shadow:0 10px 30px rgba(0,0,0,.08);
-
-}
-
-.expert-card:hover{
-
-    transform:translateY(-10px);
-
-    box-shadow:0 25px 50px rgba(0,0,0,.18);
-
-}
-
-.expert-card i{
-
-    font-size:54px;
-
-    color:#2f8fff;
-
-    margin-bottom:25px;
-
-}
-
-.expert-card h4{
-
-    font-size:28px;
-
-    font-weight:600;
-
-    margin-bottom:18px;
-
-    color:#222;
-
-}
-
-.expert-card p{
-
-    font-size:17px;
-
-    color:#666;
-
-    line-height:1.8;
-
-}
-
-/* --------------------------
-   Buttons
--------------------------- */
-
-.btn-primary{
-
-    background:#2f8fff;
-
-    border:none;
-
-    border-radius:50px;
-
-    padding:14px 32px;
-
-}
-
-.btn-primary:hover{
-
-    background:#1d74d1;
-
-}
-
-/* --------------------------
-   Footer (Placeholder)
--------------------------- */
-
-footer{
-
-    background:#071321;
+    line-height:1.1;
 
     color:#ffffff;
-
-    padding:70px 0;
-
-}
-
-footer h4{
 
     margin-bottom:20px;
 
 }
 
-footer a{
+.hero p{
 
-    color:#d7d7d7;
+    font-size:22px;
 
-}
+    color:#f1f1f1;
 
-footer a:hover{
+    line-height:1.7;
 
-    color:#3fb8ff;
-
-}
-
-/* --------------------------
-   Utility Classes
--------------------------- */
-
-.text-blue{
-
-    color:#3fb8ff;
+    margin-bottom:35px;
 
 }
 
-.shadow-lg-custom{
+.hero-buttons .btn{
 
-    box-shadow:0 20px 50px rgba(0,0,0,.18);
+    padding:16px 34px;
 
-}
+    border-radius:40px;
 
-.rounded-xl{
+    font-size:18px;
 
-    border-radius:24px;
-
-}
-
-/* --------------------------
-   Animations
--------------------------- */
-
-.expert-card{
-
-    opacity:0;
-
-    transform:translateY(30px);
-
-    animation:fadeUp .8s ease forwards;
+    transition:.3s;
 
 }
 
-.expert-card:nth-child(1){
+.hero-buttons .btn-primary{
 
-    animation-delay:.1s;
+    background:#1d8cff;
+
+    border:none;
 
 }
 
-@keyframes fadeUp{
+.hero-buttons .btn-primary:hover{
 
-    from{
+    transform:translateY(-4px);
 
-        opacity:0;
+}
 
-        transform:translateY(30px);
+.hero-buttons .btn-outline-light:hover{
 
-    }
+    transform:translateY(-4px);
 
-    to{
+}
 
-        opacity:1;
+/*==========================================
+            SECTION
+==========================================*/
 
-        transform:translateY(0);
+section{
 
-    }
+    padding:100px 0;
 
 }

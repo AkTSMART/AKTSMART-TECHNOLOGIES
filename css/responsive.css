@@ -1,303 +1,266 @@
-/* ==========================================================
+/* ==========================================
+   RESPONSIVE.CSS
    AKTSmart Technologies
-   Responsive Stylesheet
-   ========================================================== */
+========================================== */
 
-/* ------------------------------
-   Large Desktop (1400px and below)
--------------------------------- */
 
-@media (max-width:1400px){
-
-.section-heading h2{
-
-    font-size:44px;
-
-}
-
-.navbar-brand{
-
-    font-size:26px;
-
-}
-
-}
-
-/* ------------------------------
-   Laptop (1200px and below)
--------------------------------- */
+/* ==========================================
+   Large Devices (≤1200px)
+========================================== */
 
 @media (max-width:1200px){
 
-.section-heading h2{
+.hero h1{
 
-    font-size:40px;
-
-}
-
-.expert-card{
-
-    padding:35px 25px;
+    font-size:56px;
 
 }
 
-.expert-card h4{
+.hero p{
 
-    font-size:24px;
+    font-size:20px;
+
+}
+
+.nav-link{
+
+    margin-left:10px;
 
 }
 
 }
 
-/* ------------------------------
-   Tablet Landscape
--------------------------------- */
+
+/* ==========================================
+   Laptops & Tablets (≤992px)
+========================================== */
 
 @media (max-width:992px){
 
 .navbar{
 
-    padding:14px 0;
-
-}
-
-.navbar-nav{
-
-    background:#071321;
-
-    padding:15px;
-
-    margin-top:15px;
-
-    border-radius:12px;
-
-}
-
-.navbar-nav .nav-link{
-
-    margin-left:0;
-
     padding:12px 0;
 
 }
 
-.hero{
-
-    padding-top:75px;
-
-}
-
-.section-heading{
-
-    margin-bottom:50px;
-
-}
-
-.section-heading h2{
-
-    font-size:36px;
-
-}
-
-.section-heading p{
-
-    font-size:17px;
-
-}
-
-.expertise{
-
-    padding:70px 0;
-
-}
-
-.expert-card{
-
-    padding:35px 25px;
-
-}
-
-}
-
-/* ------------------------------
-   Tablet Portrait
--------------------------------- */
-
-@media (max-width:768px){
-
-.hero{
-
-    padding-top:70px;
-
-}
-
-.hero-image{
-
-    width:100%;
-
-}
-
-.section-heading h5{
-
-    font-size:13px;
-
-    letter-spacing:2px;
-
-}
-
-.section-heading h2{
-
-    font-size:32px;
-
-}
-
-.section-heading p{
-
-    font-size:16px;
-
-}
-
-.expert-card{
-
-    margin-bottom:20px;
-
-}
-
-.expert-card i{
-
-    font-size:44px;
-
-}
-
-.expert-card h4{
-
-    font-size:22px;
-
-}
-
-.expert-card p{
-
-    font-size:16px;
-
-}
-
-}
-
-/* ------------------------------
-   Mobile
--------------------------------- */
-
-@media (max-width:576px){
-
 .navbar-brand{
 
-    font-size:22px;
+    font-size:1.7rem;
 
 }
 
 .hero{
 
-    padding-top:65px;
+    min-height:90vh;
+
+    padding:120px 0 80px;
+
+    background-position:center center;
 
 }
 
-.section-heading{
+.hero-content{
 
-    margin-bottom:40px;
+    max-width:100%;
 
-}
-
-.section-heading h2{
-
-    font-size:28px;
+    text-align:center;
 
 }
 
-.section-heading p{
+.hero h1{
 
-    font-size:15px;
-
-    padding:0 10px;
+    font-size:48px;
 
 }
 
-.expertise{
-
-    padding:50px 0;
-
-}
-
-.expert-card{
-
-    padding:28px 20px;
-
-}
-
-.expert-card i{
-
-    font-size:38px;
-
-}
-
-.expert-card h4{
+.hero p{
 
     font-size:20px;
 
 }
 
-.expert-card p{
+.hero-buttons{
 
-    font-size:15px;
+    display:flex;
+
+    justify-content:center;
+
+    gap:15px;
+
+    flex-wrap:wrap;
+
+}
+
+.hero-buttons .btn{
+
+    min-width:220px;
 
 }
 
 .dropdown-menu{
 
-    border-radius:10px;
+    border:none;
+
+    box-shadow:none;
+
+    background:#1b2230;
+
+}
+
+.dropdown-item{
+
+    color:#ffffff;
+
+}
+
+.dropdown-item:hover{
+
+    background:#0d6efd;
 
 }
 
 }
 
-/* ------------------------------
-   Small Mobile
--------------------------------- */
 
-@media (max-width:400px){
+/* ==========================================
+   Tablets (≤768px)
+========================================== */
 
-.navbar-brand{
+@media (max-width:768px){
 
-    font-size:20px;
+.hero{
 
-}
+    min-height:85vh;
 
-.section-heading h2{
-
-    font-size:24px;
+    padding-top:110px;
 
 }
 
-.section-heading p{
+.hero-tag{
 
-    font-size:14px;
-
-}
-
-.expert-card{
-
-    padding:22px 18px;
+    font-size:13px;
 
 }
 
-.expert-card h4{
+.hero h1{
+
+    font-size:40px;
+
+}
+
+.hero p{
 
     font-size:18px;
 
 }
 
-.expert-card p{
+.hero-buttons{
 
-    font-size:14px;
+    flex-direction:column;
+
+    align-items:center;
+
+}
+
+.hero-buttons .btn{
+
+    width:260px;
+
+}
+
+.navbar-brand{
+
+    font-size:1.5rem;
+
+}
+
+}
+
+
+/* ==========================================
+   Mobile (≤576px)
+========================================== */
+
+@media (max-width:576px){
+
+.hero{
+
+    min-height:80vh;
+
+    padding:100px 0 60px;
+
+}
+
+.hero-tag{
+
+    font-size:12px;
+
+    padding:7px 16px;
+
+}
+
+.hero h1{
+
+    font-size:34px;
+
+    line-height:1.2;
+
+}
+
+.hero p{
+
+    font-size:16px;
+
+    line-height:1.6;
+
+}
+
+.hero-buttons .btn{
+
+    width:100%;
+
+    font-size:17px;
+
+}
+
+.navbar-brand{
+
+    font-size:1.35rem;
+
+}
+
+.nav-link{
+
+    margin-left:0;
+
+}
+
+}
+
+
+/* ==========================================
+   Extra Small Phones (≤400px)
+========================================== */
+
+@media (max-width:400px){
+
+.hero h1{
+
+    font-size:30px;
+
+}
+
+.hero p{
+
+    font-size:15px;
+
+}
+
+.hero-buttons .btn{
+
+    padding:14px 20px;
+
+    font-size:16px;
 
 }
 
