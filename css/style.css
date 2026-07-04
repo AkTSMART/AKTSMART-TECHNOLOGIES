@@ -8,21 +8,19 @@ body{
     font-family:'Poppins',sans-serif;
 }
 
-.hero{
-    height:100vh;
+.hero-content{
+    max-width:900px;
+    margin:auto;
+}
 
-    background:
-    linear-gradient(rgba(8,15,32,.65),
-    rgba(8,15,32,.65)),
-    url("../images/hero-banner.jpg");
-
-    background-size:cover;
-    background-position:center;
-    background-repeat:no-repeat;
-
-    display:flex;
-    align-items:center;
-    justify-content:center;
-    text-align:center;
-    color:white;
+.hero-tag{
+    display:inline-block;
+    padding:10px 25px;
+    border-radius:30px;
+    background:rgba(255,255,255,.12);
+    backdrop-filter:blur(10px);
+    color:#00C8FF;
+    font-weight:600;
+    letter-spacing:1px;
+    margin-bottom:25px;
 }
