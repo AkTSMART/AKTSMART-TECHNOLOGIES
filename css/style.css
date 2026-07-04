@@ -22,7 +22,7 @@ body{
 .hero{
     height:100vh;
     min-height:850px;
-    background:url("../herov2.png") center center/cover no-repeat;
+    background:url("../herov2.png") ;
     position:relative;
     display:flex;
     align-items:center;
