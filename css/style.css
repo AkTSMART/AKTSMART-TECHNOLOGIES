@@ -9,41 +9,20 @@ body{
 }
 
 .hero{
-
     height:100vh;
 
-    background:linear-gradient(rgba(8,15,32,.70),
-    rgba(8,15,32,.70)),
-    url('https://images.unsplash.com/photo-1497366754035-f200968a6e72?q=80&w=2000');
+    background:
+    linear-gradient(rgba(8,15,32,.65),
+    rgba(8,15,32,.65)),
+    url("../images/hero-banner.jpg");
 
     background-size:cover;
-
     background-position:center;
+    background-repeat:no-repeat;
 
     display:flex;
-
-    justify-content:center;
-
     align-items:center;
-
+    justify-content:center;
     text-align:center;
-
     color:white;
-
-}
-
-.hero h1{
-
-    font-size:64px;
-
-    font-weight:700;
-
-}
-
-.hero p{
-
-    font-size:22px;
-
-    margin-top:20px;
-
 }
